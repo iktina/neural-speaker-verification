@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package sf;
+
+message Audio {
+    bytes audio1 = 1;
+    bytes audio2 = 2;
+}
+
+message Output {
+    string result = 1;
+}
+
+service sf {
+    rpc separate(Audio) returns (Output) {}
+}
