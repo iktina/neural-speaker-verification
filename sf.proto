@@ -12,5 +12,5 @@ message Output {
 }
 
 service sf {
-    rpc separate(Audio) returns (Output) {}
+    rpc sf(Audio) returns (Output) {}
 }
